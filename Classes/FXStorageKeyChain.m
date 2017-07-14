@@ -21,7 +21,7 @@
 DEF_SINGLETON_INIT(FXStorageKeyChain)
 
 -(void) singleInit {
-    self.keychainStore = [[UICKeyChainStore alloc] initWithService:[[NSBundle mainBundle] bundleIdentifier] accessGroup:@""];
+    self.keychainStore = [[UICKeyChainStore alloc] initWithService:[[NSBundle mainBundle] bundleIdentifier] accessGroup:nil];
 }
 
 #pragma mark IFXStorageProtocol
